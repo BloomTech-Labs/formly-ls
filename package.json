@@ -2,20 +2,63 @@
   "name": "formly-ls",
   "version": "0.1.0",
   "private": true,
+  "description": "LambdaSchool Application",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lambda-School-Labs/formly-ls"
+  },
+  "scripts": {
+    "start-win": "start npm run mongo && nodemon build/server.js",
+    "start-unix": "npm run mongo & nodemon build/server.js",
+    "build": "eslint src/*/*.js && eslint src/*/*.jsx && webpack",
+    "build-production": "webpack -p",
+    "dev-win": "start npm run build -- --watch && npm run start-win",
+    "dev-unix": "npm run build -- --watch & npm run start-unix",
+    "devw": "npm run dev-win",
+    "devm": "npm run dev-unix",
+    "devl": "npm run dev-unix",
+    "mongo": "mongod --dbpath data/db/"
+  },
   "dependencies": {
+    "axios": "^0.16.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "express-subdomain": "^1.0.5",
+    "history": "^4.7.2",
+    "mongoose": "^4.12.3",
+    "node-sass": "^4.5.3",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-materialize": "^1.0.16",
     "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-router-with-props": "^0.1.1",
     "react-scripts": "1.0.14",
     "redux": "^3.7.2",
-    "redux-promise": "^0.5.3"
+    "redux-promise": "^0.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.8.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-addons-transition-group": "^15.6.2",
+    "webpack-node-externals": "^1.6.0"
   }
 }

@@ -1,0 +1,106 @@
+/*this was a copy/paste from our week 3 DOM project and should be rewritten*/
+
+.header {
+	width: 100%;
+	height: 60px;
+	left: 0;
+	top: 0;
+	border-bottom: 1.5px solid rgb(218, 215, 255);
+	border-bottom: 1.5px solid rgba(218, 215, 255, .5);
+	min-height: 60px;
+	background-color: rgb(16,24,24);
+	position: fixed;
+	z-index: 9001;
+}
+
+.logo {
+	position: relative;
+	display: inline-block;
+	float: left;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 2vmin;
+	margin-right: 3vmin;
+}
+
+.logo > a > img {
+	height: 30px;
+}
+
+.menu {
+	display: inline-block;
+	text-align: center;
+}
+
+.menu.items > p {
+	position: relative;
+	display: inline-block;
+	margin-top: 0px;
+	padding: 20px 10px 24px 10px;
+	font-size: 16px;
+	color: white;
+	text-transform: uppercase;
+	top: 0;
+}
+
+.menu.items.courses:hover + .menu.items.courses.dropdown {
+	display: block;
+}
+
+.menu.items.courses.dropdown:hover {
+	display: block;
+}
+
+.menu.items.courses.dropdown {
+	position: absolute;
+	display: none;
+	text-align: left;
+	width: 380px;
+	color: white;
+	background-color: rgb(25,26,28);
+	padding: 8px 8px 8px 20px;
+	margin-top: -16px;
+	box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+}
+
+.menu.items.courses.dropdown > * {
+	opacity: .6;
+}
+
+.menu.items.courses.dropdown > h1 {
+	font-size: 14px;
+}
+
+.menu.items.courses.dropdown > h2 {
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+.menu.items.courses.dropdown > h4 {
+	font-size: 10px;
+	margin-top: 30px;
+	opacity: .4;
+}
+
+.menu.items > p:hover {
+	opacity: .8;
+}
+
+@media screen and (max-width: 995px){
+	.logo > a > img{
+		height: 20px;
+	}
+
+	.menu.items > * {
+		font-size: 12px !important;
+		padding-right: 1.5vmin !important;
+		padding-left: 1.5vmin !important;
+		padding-bottom: 3% !important;
+		padding-top: 6% !important;
+		bottom: 0 !important;
+	}
+
+	.menu.items.courses:hover + .menu.items.courses.dropdown {
+		display: none;
+	}
+}

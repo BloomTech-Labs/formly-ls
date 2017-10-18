@@ -1,0 +1,179 @@
+{
+  "form": [
+    {
+      "type": "input",
+      "title": "What is your first name?",
+      "index": "1"
+    },
+    {
+      "type": "input",
+      "title": "What is your last name?",
+      "index": "2"
+    },
+    {
+      "type": "input",
+      "title": "What is your email address?",
+      "inputType": "email",
+      "index": "3"
+    },
+    {
+      "type": "input",
+      "title": "Where are you currently living?",
+      "description": "City, State/Province, Country",
+      "index": "4"
+    },
+    {
+      "type": "option-panel",
+      "title": "Are you a US citizen or Permanent Resident?",
+      "index": "5",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "type": "quote",
+      "title": "Lambda School is committed to building a diverse and inclusive environment. We are collecting data to use as a benchmark for our efforts and are requesting your participation. Feel free to opt out by selecting \"Prefer not to answer\"."
+    },
+    {
+      "type": "input",
+      "title": "What is your date of birth?",
+      "inputType": "date",
+      "index": "6"
+    },
+    {
+      "type": "option-panel",
+      "title": "What gender category do you identify with?",
+      "index": "7",
+      "options": [
+        "Male",
+        "Female",
+        "Trans Male",
+        "Trans Female",
+        "Other",
+        "Non-binary/gender non-conforming",
+        "Prefer not to answer"
+      ],
+      "icons": [
+        "fal fa-venus",
+        "fal fa-mars",
+        "fal fa-transgender",
+        "fal fa-mars-stroke",
+        "fal fa-mars-stroke-v",
+        "fal fa-neuter",
+        "fal fa-genderless"
+      ]
+    },
+    {
+      "type": "option-panel",
+      "title": "What race or ethnicity do you identify as?",
+      "index": "8",
+      "options": [
+        "Asian",
+        "American Indian or Alaska Native",
+        "Black or African American",
+        "Hispanic or Latino/a",
+        "Native Hawaiian or Pacific Islander",
+        "White",
+        "Multi-racial",
+        "Prefer not to answer",
+        "Other"
+      ]
+    },
+    {
+      "type": "option-panel-multi",
+      "title": "A new Lambda School class begins on the first Monday of each month. What month (or months) are you applying for?",
+      "index": "9",
+      "options": [
+        "Oct 2017",
+        "Nov 2017",
+        "Dec 2017",
+        "Jan 2018",
+        "Feb 2018",
+        "Mar 2018",
+        "Apr 2018",
+        "May 2018",
+        "Jun 2018",
+        "Jul 2018",
+        "Aug 2018",
+        "Sept 2018",
+        "Later months"
+      ]
+    },
+    {
+      "type": "textarea",
+      "title": "Tell us about what schools you have attended and degrees you have achieved.",
+      "description": "Use separate lines for each school",
+      "index": "10"
+    },
+    {
+      "type": "textarea",
+      "title": "Tell us about your work experience (employers, positions/titles)",
+      "description": "Use separate lines for each job, most recent first",
+      "index": "11"
+    },
+    {
+      "type": "option-panel",
+      "title": "Which of the following best describes your programming experience?",
+      "index": "12",
+      "options": [
+        "No experience: but I'm excited to start learning!",
+        "Beginning learner: I've played with some introductory coding lessons and tutorials",
+        "Intermediate learner: I have completed some coding classes or tutorials",
+        "Advanced: I am familiar with OO programming and can create simple applications",
+        "Professional: I'm an experienced software engineer and want to upgrade my skills",
+        "White",
+        "Multi-racial",
+        "Prefer not to answer",
+        "Other"
+      ]
+    },
+    {
+      "type": "textarea",
+      "title": "Please tell us in one or two sentences about the most impressive thing that you have built or achieved",
+      "index": "13"
+    },
+    {
+      "type": "textarea",
+      "title": "Why would you be a good candidate for Lambda School?",
+      "index": "14"
+    },
+    {
+      "type": "option-panel",
+      "title": "Lambda School is an immersive program that lasts six months, 9 a.m. to 6 p.m. Pacific. Will you be able to attend **ALL** class sessions in their entirety?",
+      "index": "15",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "type": "input",
+      "title": "Do you have any other commitments during the time you are applying for?",
+      "index": "16"
+    },
+    {
+      "type": "input",
+      "title": "How will you support yourself financially during the six months of Lambda School?",
+      "index": "17"
+    },
+    {
+      "type": "option-panel",
+      "title": "If accepted, what payment method will you be using?",
+      "index": "18",
+      "options": [
+        "$20,000 up-front and no income-based repayment",
+        "$10,000 up-front + 17% of salary for one year",
+        "$0 up-front + 17% of salary for two years"
+      ]
+    }
+  ],
+  "icons": {
+    "quote": {
+      "left": "fas fa-quote-left",
+      "right": "fas fa-quote-right"
+    },
+    "arrow": "fal fa-long-arrow-alt-right",
+    "check": "fas fa-check"
+  }
+}

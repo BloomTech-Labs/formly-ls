@@ -8,6 +8,11 @@
 
 # production
 /build
+/public/css/styles.css
+/public/js/bundle.js
+
+# database
+/data/db
 
 # misc
 .DS_Store
