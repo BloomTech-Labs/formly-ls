@@ -12,6 +12,7 @@ import Header from './Header';
 import Entry from './Entry';
 import Form from './Form';
 
+import app from '../app.json';
 import '../styles/App.css';
 
 export default class App extends Component {
@@ -48,7 +49,7 @@ export default class App extends Component {
             <Header />
             <Switch>
               <PropsRoute exact path="/" component={Entry} mobile={this.viewerIsMobile} />
-              <PropsRoute exact path="/application" component={Form} mobile={this.viewerIsMobile} />
+              <PropsRoute exact path="/application" component={Form} mobile={this.viewerIsMobile} form={app.form} />
             </Switch>
           </div>
         </Router>

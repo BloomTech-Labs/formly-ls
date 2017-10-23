@@ -25,11 +25,14 @@ app.use(express.static('public', {
   index: false
 }));
 
-rootRouter.get('/*', (req, res) => res.redirect(307, 'http://apply.localhost.test:3000' + req.originalUrl));
-rootRouter.post('/*', (req, res) => res.redirect(307, 'http://apply.localhost.test:3000' + req.originalUrl));
+// rootRouter.get('/*', (req, res) => res.redirect(307, 'http://apply.localhost.test:3000' + req.originalUrl));
+// rootRouter.post('/*', (req, res) => res.redirect(307, 'http://apply.localhost.test:3000' + req.originalUrl));
+
+rootRouter.get('/*', getApplication);
+rootRouter.post('/*', postApplication);
 
 apply.get('/*', getApplication);
-apply.post('/', getApplication);
+apply.post('/', postApplication);
 
 
 app.use(subdomain('apply', apply));

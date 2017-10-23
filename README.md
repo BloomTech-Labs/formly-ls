@@ -24,5 +24,17 @@
     * naviagte to `localhost:3000`
     * or just go to `apply.localhost.test:3000` as you will be redirected there anyways
 
+## Todo
+
+  * add support for a date input
+  * make `TextArea` match the one on [lambdaschool](https://lambdaschool.com/apply-cs)
+  * make options position themselves correctly (ie) some options go on the same line, some go on their own line, some go in a grid
+  * vertical align option button content
+  * make buttons react correctly to being selected (ie) add check mark, flash border, change CharIcon background color
+  * validate required fields on submit, focus first invalid field
+  * add progress bar
+  * post formdata
+  * finish styling
+
 ## Materialize-React
  * [Docs](https://react-materialize.github.io/#/)

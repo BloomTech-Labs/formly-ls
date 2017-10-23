@@ -1,0 +1,218 @@
+.button-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.button-wrapper > * {
+  color: #3D3D3D;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button-wrapper > button {
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  border-color: rgba(108, 189, 207, .5019607843137255);
+  border-width: 2px;
+  border-radius: 5px 5px 5px 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+  transition: all 100ms ease-out;
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+  color: white;
+  background-color: rgb(5, 154, 213);
+  padding: .8rem 1.3rem .8rem 1.3rem;
+  outline: none;
+}
+
+.button-wrapper:hover span{
+  color: rgb(82, 201, 248);
+}
+
+.button-wrapper > button:hover {
+  background-color: rgb(82, 201, 248);
+}
+
+.button-wrapper > .subtext {
+  position: absolute;
+  height: 1rem;
+  white-space:nowrap;
+  float: bottom;
+  bottom: 1rem;
+  transition: all 100ms ease-out;
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+}
+
+.button-wrapper svg {
+  margin-left: .5rem;
+}
+
+.subtext {
+  font-size: .7rem;
+  color: rgb(5, 154, 213);
+  cursor: default;
+}
+
+.form {
+  padding-bottom: 5rem;
+}
+
+.form > ul, .form > ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+.form .question ul, .form .question li {
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.form .question, .form .quote {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form li {
+  list-style: none;
+}
+
+.form .option > button > * {
+  pointer-events: none;
+}
+
+.form .option > #selected {
+  background-color: blue;
+}
+
+.form .question, .form .quote {
+  margin-top: 3rem;
+}
+
+.form .question > .title, .quote > .title {
+  display: inline-block;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.form .question .button-wrapper, .quote .button-wrapper{
+  transform: scale(.8);
+}
+
+.form .question > .title > .index {
+  display: inline-block;
+  font-size: .8rem;
+  margin-right: .5rem;
+  color: rgb(82, 201, 248);
+}
+
+.form .quote > .title > svg {
+  font-size: 1rem;
+  margin-right: .4rem;
+}
+
+.form .question > .multi-options > #options {
+  border-left: 1px dashed rgb(82, 201, 248);
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+.form .question > .multi-options ul, .form .question > .multi-options li {
+  margin: 0;
+  padding: 0;
+}
+
+.form .question > .multi-options > #options > .instructions {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: .8rem;
+  color: rgb(5, 154, 213);
+}
+
+.form .question > .input > input {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(82, 201, 248);
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+  color: rgb(5, 154, 213);
+}
+
+.form .question .options {
+  display: table;
+  vertical-align: middle;
+}
+
+.form .question .option {
+  display: table-row;
+  vertical-align: middle;
+}
+
+.form .question .option > button {
+  display: table-cell;
+  background: rgba(82, 201, 248, .1);
+  color: rgb(5, 154, 213);
+  outline: none;
+  border-color: rgba(5, 154, 213, .3);
+  border-style: solid;
+  border-radius: 3px;
+  text-align: left;
+  margin-top: .5rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  width: 100%;
+}
+
+/*.form .question > .multi-options .options {
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  grid-column-gap: .5rem;
+}
+
+.form .question > .multi-options .options > .option {
+  display: inline-block;
+}
+
+.form .question > .multi-options .options > .option > button {
+  display: inline-block;
+  margin-left: .8rem;
+}*/
+
+.form .question .option > button > svg {
+  margin-left: .3rem;
+}
+
+.form .question .option > button > * {
+}
+
+.form .question .char-icon > .char {
+  text-transform: uppercase;
+  padding: .2rem .5rem .2rem .5rem;
+  margin-right: .5rem;
+  border: 1px solid rgba(5, 154, 213, .3);
+  color: rgb(5, 154, 213);
+  background-color: rgba(82, 201, 248, .1);
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.form > .submit {
+  text-align: center;
+  margin-top: 3rem;
+}
